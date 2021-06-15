@@ -1,0 +1,52 @@
+﻿@model IEnumerable<WebsiteHouseBanDoNoiThat.Model.NhaSanXuat>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Danh sách nhà sản xuất</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới", "Create")
+</p>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>
+            Mã nhà sản xuất
+        </th>
+        <th>
+            Tên nhà sản xuất
+        </th>
+        <th>
+            Địa chỉ nhà sản xuất
+        </th>
+        <th>
+            SĐT nhà sản xuất
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaNhaSanXuat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenNhaSanXuat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiaChiNhaSanXuat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DienThoaiNhaSanXuat)
+        </td>
+        <td>
+            @Html.ActionLink("Chỉnh sửa", "Edit", new { id = item.MaNhaSanXuat }) |
+            @Html.ActionLink("Chi tiết", "Details", new { id = item.MaNhaSanXuat }) |
+            @Html.ActionLink("Xóa", "Delete", new { id = item.MaNhaSanXuat })
+        </td>
+    </tr>
+    }
+
+</table>

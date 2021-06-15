@@ -1,0 +1,56 @@
+﻿@model WebsiteHouseBanDoNoiThat.Model.NhaSanXuat
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Xóa</h2>
+
+<h3>Bạn có muốn xóa mục này?</h3>
+<div>
+    <h4>Nhà sản xuất</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mã nhà sản xuất
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaNhaSanXuat)
+        </dd>
+        <dt>
+            Tên nhà sản xuất
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNhaSanXuat)
+        </dd>
+
+        <dt>
+            Địa chỉ nhà sản xuất
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChiNhaSanXuat)
+        </dd>
+
+        <dt>
+            SĐT nhà sản xuất
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DienThoaiNhaSanXuat)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,12 @@
+C:\Users\Administrator\Desktop\WebsiteHouseBanDoNoiThat\WebsiteHouseBanDoNoiThat.Model\bin\Release\WebsiteHouseBanDoNoiThat.Model.dll.config
+C:\Users\Administrator\Desktop\WebsiteHouseBanDoNoiThat\WebsiteHouseBanDoNoiThat.Model\bin\Release\WebsiteHouseBanDoNoiThat.Model.dll
+C:\Users\Administrator\Desktop\WebsiteHouseBanDoNoiThat\WebsiteHouseBanDoNoiThat.Model\bin\Release\WebsiteHouseBanDoNoiThat.Model.pdb
+C:\Users\Administrator\Desktop\WebsiteHouseBanDoNoiThat\WebsiteHouseBanDoNoiThat.Model\bin\Release\EntityFramework.dll
+C:\Users\Administrator\Desktop\WebsiteHouseBanDoNoiThat\WebsiteHouseBanDoNoiThat.Model\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\WebsiteHouseBanDoNoiThat\WebsiteHouseBanDoNoiThat.Model\bin\Release\EntityFramework.xml
+C:\Users\Administrator\Desktop\WebsiteHouseBanDoNoiThat\WebsiteHouseBanDoNoiThat.Model\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\WebsiteHouseBanDoNoiThat\WebsiteHouseBanDoNoiThat.Model\obj\Release\WebsiteHouseBanDoNoiThat.Model.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\WebsiteHouseBanDoNoiThat\WebsiteHouseBanDoNoiThat.Model\obj\Release\WebsiteHouseBanDoNoiThat.Model.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\WebsiteHouseBanDoNoiThat\WebsiteHouseBanDoNoiThat.Model\obj\Release\WebsiteHouseBanDoNoiThat.Model.csproj.CopyComplete
+C:\Users\Administrator\Desktop\WebsiteHouseBanDoNoiThat\WebsiteHouseBanDoNoiThat.Model\obj\Release\WebsiteHouseBanDoNoiThat.Model.dll
+C:\Users\Administrator\Desktop\WebsiteHouseBanDoNoiThat\WebsiteHouseBanDoNoiThat.Model\obj\Release\WebsiteHouseBanDoNoiThat.Model.pdb

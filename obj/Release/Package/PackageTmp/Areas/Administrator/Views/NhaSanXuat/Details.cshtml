@@ -1,0 +1,49 @@
+﻿@model WebsiteHouseBanDoNoiThat.Model.NhaSanXuat
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Chi tiết</h2>
+
+<div>
+    <h4>Nhà sản xuất</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mã nhà sản xuất
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaNhaSanXuat)
+        </dd>
+        <dt>
+            Tên nhà sản xuất
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNhaSanXuat)
+        </dd>
+
+        <dt>
+            Địa chỉ nhà sản xuất
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChiNhaSanXuat)
+        </dd>
+
+        <dt>
+            SĐT nhà sản xuất
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DienThoaiNhaSanXuat)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.MaNhaSanXuat }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

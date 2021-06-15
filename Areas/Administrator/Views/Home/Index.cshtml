@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+<h1>Chào - @Session["username"]</h1>
+<h4>Bạn đang ở trang admin của Website House Bán Đồ Nội Thất</h4>
+<div class="row tile_count">
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-user"></i>Tổng số người dùng</span>
+        <div class="count">150</div>
+        <span class="count_bottom"><i class="green">4% </i>Tuần trước</span>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-user"></i>Tổng số nữ giới</span>
+        <div class="count green">60</div>
+        <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i>Tuần trước</span>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-user"></i>Tổng số nam giới</span>
+        <div class="count red">7</div>
+        <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>12% </i>Tuần trước</span>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-user"></i>Tổng số kết nối</span>
+        <div class="count">364</div>
+        <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>20% </i>Tuần trước</span>
+    </div>
+</div>
+<!-- /top tiles -->
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="dashboard_graph">
+            <div class="row x_title">
+                <div class="col-md-6">
+                    <h3>Tổng lượt truy cập Website House Nội Thất</h3>
+                </div>
+                <div class="col-md-6">
+                    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                        <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-12">
+                <div id="chart_plot_01" class="demo-placeholder"></div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
+                <div class="x_title">
+                    <h2>Lượt truy cập của thiết bị</h2>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-6">
+                    <div>
+                        <p>Máy tính</p>
+                        <div class="">
+                            <div class="progress progress_sm" style="width: 100%;">
+                                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Điện thoại</p>
+                        <div class="">
+                            <div class="progress progress_sm" style="width: 100%;">
+                                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="30"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Tốc độ truy cập thiết bị</h4>
+                    <canvas width="150" height="80" id="chart_gauge_01" class="" style="width: 160px; height: 100px;"></canvas>
+                    <div class="goal-wrapper">
+                        <span id="gauge-text" class="gauge-value pull-left">0%</span>
+                        <span class="gauge-value pull-left">%</span>
+                        <span id="goal-text" class="goal-value pull-right">100%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

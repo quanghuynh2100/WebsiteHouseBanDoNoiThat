@@ -1,0 +1,40 @@
+﻿@model IEnumerable<WebsiteHouseBanDoNoiThat.Model.KichCo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Danh sách kích cỡ</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới", "Create")
+</p>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>
+            Mã kích cỡ
+        </th>
+        <th>
+            Tên kích cỡ
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaKichCo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenKichCo)
+        </td>
+        <td>
+            @Html.ActionLink("Chỉnh sửa", "Edit", new { id = item.MaKichCo }) |
+            @Html.ActionLink("Chi tiết", "Details", new { id = item.MaKichCo }) |
+            @Html.ActionLink("Xóa", "Delete", new { id = item.MaKichCo })
+        </td>
+    </tr>
+    }
+
+</table>
